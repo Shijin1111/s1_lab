@@ -1,0 +1,9 @@
+<?php
+if($_POST)
+{
+    $fact=1;
+    $num=$_POST['number'];
+    for($i=2;$i<=$num;$i++)
+    {
+        $fact
+    }
