@@ -1,0 +1,9 @@
+d1={'apple':5,'banana':7,'zomato':18,'camel':63}
+d2={'carrot':5,'cat':8}
+print("dictionaries",d1,d2)
+new=d1.copy()
+new.update(d2)
+print(new)
+asc=dict(sorted(d1.items()))
+desc=dict(sorted(d1.items(),reverse=True))
+print("\n\nascending:",asc,"descending:",desc)

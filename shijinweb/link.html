@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#4">click here</a>
+    <div id="5">
+        How To Change Table Font Size in HTML Documents
+        To change the HTML table font size in any section of your document you should use HTML elements and attributes or CSS styling properties. Using the HTML method requires the addition of specific elements and attributes that are going to wrap the HTML table. On the other hand, you can include the CSS properties anywhere in your document. Also, bear in mind that the value of 3 is the default size font.
+        
+        Experts recommend using the CSS method because it is more practical and easier to implement. Nevertheless, we are going to explain and exemplify both ways of changing the fonts for HTML tables. The reason why CSS is the preferred method is that changing the HTML table font size is considered a visual change. Without further ado, let us take a look at the first method.
+        
+        Using HTML Elements
+        – Creating the Complete HTML Syntax
+        This example is going to contain two HTML tables where each table is going to be styled differently. Do not forget to include the closing HTML font element because it may mess up the rest of your document.
+        
+        
+        The two HTML font elements are nesting the tables inside your document, as shown in the following example:
+        
+        <!DOCTYPE html>
+        <html>
+        <body>
+        <font size=”1″ face=”Times New Roman” >
+        <table width=”95%”>
+        <tr>
+        <td> Customer </td>
+        <td> Name </td>
+        <td> Username </td>
+        <td> Filename </td>
+        <td> KeyName </td>
+        <td> Price </td>
+        </tr>
+        <tr>
+        <td> No.1 </td>
+        <td> Biff </td>
+        <td> biff20 </td>
+        <td> master.biff </td>
+        <td> Biff2202 </td>
+        <td> $250 </td>
+        </tr>
+        </table>
+        </font>
+        <font size=”4″ face=”Calibri” >
+        <table width=”95%”>
+        <tr>
+        <td> Customer </td>
+        <td> Name </td>
+        <td> Username </td>
+        <td> Filename </td>
+        <td> KeyName </td>
+        <td> Price </td>
+        </tr>
+        <tr>
+        <td> No. 2 </td>
+        <td> Thomas </td>
+        <td> Thomas.22 </td>
+        <td> master.thomas </td>
+        <td> Thomas4155 </td>
+        <td> $650 </td>
+        </tr>
+        </table>
+        </font>
+        </body>
+        </html>
+        
+        This example is all it takes to change the size and font of the content inside your HTML table. However, the reason why this method is not used anymore is that the HTML font element was deprecated in HTML5. Web developers started using it less and less because CSS styling properties were the easier way out. That is why, in the following section, we are going to teach you everything about the process of changing the HTML table font size using CSS properties.
+        
+        – Explanation
+        To change the HTML table font size using HTML requires the addition of the font element. Inside the HTML font element, you are supposed to add the HTML size and face attributes. Also, a specific value is supposed to be included. You can include a value from 1 to 7, where 1 specifies the lowest font size and 7 represents the largest font size.
+        
+        
+        You can include a specific font inside the HTML face attribute and change the default value. Since the HTML font element has opening and closing tags, they are supposed to wrap the HTML table. All HTML table elements are supposed to be included in the body of your document.
+        
+        Using CSS Properties
+        Changing the default HTML visual output is easily done using a specific CSS style sheet. The CSS properties can be added in the same HTML document, though experts recommend writing them separately. The reason why they are so versatile is that you can style a single HTML element without affecting the rest of the document.
+        
+        All you are supposed to do is to create a CSS class and write the properties inside. Also, there should be at least a single value for each CSS property. To change the HTML table font size, you are supposed to use the CSS font-size property. Moreover, after we provide you with a thorough example, let us take a look at all the values for the CSS font-size property.
+        
+        – Creating the Complete CSS Syntax
+        This example is going to contain all necessary HTML elements, attributes, and CSS properties mentioned before. Make sure to carefully observe the whole syntax.
+        
+        
+        The CSS styling properties are added inside the head of your HTML document, as shown in the following example:
+        
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <title> My best records </title>
+        <style rel=’stylesheet’ type=’text/css’>
+        body {
+        margin: 0;
+        }
+        table {
+        width: 190px;
+        border: thin solid grey;
+        }
+        th, tfoot td {
+        border: thin solid grey;
+        text-align: center;
+        font-weight: bold;
+        }
+        tbody td {
+        font-size: 135%;
+        }
+        caption {
+        font-size: 100%;
+        text-align: right;
+        }
+        td, th, caption {
+        padding: 4px;
+        }
+        </style>
+        </head>
+        <body>
+        <div style=’width:190px;
+        height: 28px;
+        background: black;
+        color: orange;
+        text-align: center;’>
+        &lt; — 190 pixels — &gt;
+        </div>
+        <table>
+        <caption>
+        Table: My best records.
+        </caption>
+        <colgroup>
+        <col id=’album’ />
+        <col id=’artist’ />
+        <col id=’released’ />
+        </colgroup>
+        <thead>
+        <tr>
+        <th> Any album </th>
+        <th> Any artist </th>
+        <th> Time released </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td> T </td>
+        <td> P </td>
+        <td> 1990 </td>
+        </tr>
+        <tr>
+        <td> G </td>
+        <td> W </td>
+        <td> 1992 </td>
+        </tr>
+        <tr>
+        <td> Q </td>
+        <td> Y </td>
+        <td> 1994 </td>
+        </tr>
+        <tr>
+        <td> T </td>
+        <td> S </td>
+        <td> 1996 </td>
+        </tr>
+        <tr>
+        <td> B </td>
+        <td> M </td>
+        <td> 1998 </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+        <td> Any album </td>
+        <td> Any artist </td>
+        <td> Time released </td>
+        </tr>
+        </tfoot>
+        </table>
+        </body>
+        </html>
+        
+        This example contains everything you would ever need when changing the HTML table font size.
+        
+        – Possible Values for the CSS Font-size Property
+        Since the CSS font-size property is crucial for changing the HTML table font size, let us learn something more. There are numerous specific values you can include in the syntax but the most common one is a percentage value.
+        
+        The following list is going to explain all the possible values for the CSS font-size property:
+        
+        medium – this is the default size of the content in any HTML element
+        small – used to set a smaller font size
+        x-small – used to set an extra-small font size
+        xx-small – used to set an xx-small font size
+        large – used to set a larger font size
+        x-large – used to set an extra-large font size
+        xx-large – used to set an xx-large font size
+        smaller – used to set a smaller font size than the parent element
+        larger – used to set a larger font size than the parent element
+        % – used to set the font size in percentage value of the parent element
+        
+        As you can see, there are a plethora of font-size values you can choose from. The percentage value is most commonly used because you can be very specific when choosing the size.
+        
+        Changing the HTML Table Font Size for Every Row
+        It is possible to change the visual output only for specific rows in your HTML table. This can be easily done by including the styling properties inside the opening HTML tag. The syntax of the font-size styling property is going to stay the same because a specific value is still required. We are going to include different styling properties for the HTML table headers and rows.
+        
+        
+        The following example is going to contain a table with three rows having different properties:
+        
+        <table border=”2″ style=”font-family:Garamond; color:red;”>
+        <tr style=”font-style:italic; color:purple; font-size:20px;”>
+        <th> Header 1 </th>
+        <th> Header 2 </th>
+        </tr>
+        <tr>
+        <td> Table cell 1 </td>
+        <td> Table cell 2 </td>
+        </tr>
+        <tr>
+        <td> Table cell 3 </td>
+        <td> Table cell 4 </td>
+        </tr>
+        </table>
+        As you can see, there are some styling properties in the HTML table and tr opening tags. This is called inline CSS because the properties are included in the same HTML elements.
+        
+        Now that you have all the knowledge you could possibly want about creating an HTML table font size, you should make sure to give each method a try and find the one that suits you the most.
+        
+        Overall Summary and Further Notes
+        The HTML table font size is a property that can be easily changed and styled using specific HTML elements and CSS properties. This article taught you everything you need to know about the process but it also covered the following important points:
+        
+        
+        The HTML table font-size property is commonly used when changing the default output
+        There are two ways you can use to change the font size
+        Firstly, you can use specific HTML elements and attributes
+        Just keep in mind that the HTML font element is no longer supported in HTML5
+        Experts prefer using specific CSS properties when changing the size of the font
+        A common value for the CSS font-size property is the percentage
+        You can include the styling properties in the opening HTML tags</div>
+        <div id="4">
+            Main menu
+            
+            WikipediaThe Free Encyclopedia
+            Search Wikipedia
+            Search
+            Create account
+            Log in
+            
+            Personal tools
+            Contents hide
+            (Top)
+            Synopsis
+            Production
+            Release and reception
+            Toggle Release and reception subsection
+            Hoax speculation
+            Copyright issues
+            Archival footage
+            See also
+            References
+            Further reading
+            External links
+            Exit Through the Gift Shop
+            
+            Article
+            Talk
+            Read
+            Edit
+            View history
+            
+            Tools
+            From Wikipedia, the free encyclopedia
+            Exit Through the Gift Shop
+            
+            Directed by	Banksy
+            Produced by	Jaimie D'Cruz
+            Starring	Banksy
+            Mr. Brainwash
+            Shepard Fairey
+            Invader
+            Narrated by	Rhys Ifans
+            Edited by	Chris King
+            Tom Fulford
+            Music by	Geoff Barrow
+            Production
+            company	
+            Paranoid Pictures
+            Distributed by	Revolver Entertainment
+            Release dates	
+            24 January 2010 (Sundance)
+            5 March 2010 (United Kingdom)
+            Running time	87 minutes
+            Country	United Kingdom
+            Languages	English
+            French
+            Box office	$5.3 million
+            Exit Through the Gift Shop is a 2010 British documentary film directed by street artist Banksy. It tells the story of Thierry Guetta, a French immigrant in Los Angeles who, over the course of several years, filmed a host of street artists at work, including Shepard Fairey and Banksy, but failed to do anything with the footage. Eventually, Banksy decided to use the footage to make a documentary, which includes new footage depicting Guetta's rise to fame as the artist "Mr. Brainwash". In addition to narration read by Rhys Ifans, the story is largely related by Banksy himself, whose face is obscured and voice altered to preserve his anonymity. Geoff Barrow composed the film's score, and Richard Hawley's "Tonight The Streets Are Ours" plays during the opening and closing credits.[1] The film premiered at the 2010 Sundance Film Festival on 24 January 2010, and was nominated for Best Documentary Feature at the 83rd Academy Awards.
+            
+            Since its release, there has been extensive debate over whether the film is a genuine documentary or a mockumentary. When asked if the film was real, Banksy simply replied, "Yes."[2]
+            
+            Synopsis
+            Thierry Guetta is a French immigrant living in Los Angeles, who runs a successful upscale vintage clothing shop and obsessively films his life. While visiting France in 1999, Guetta discovers his cousin is famed street artist Invader. Fascinated, he accompanies Invader and his friends, who include Monsieur André and Zevs, on their nocturnal adventures, documenting everything.
+            
+            A few months later, Invader visits Guetta in LA and arranges a meeting with Shepard Fairey. Guetta continues to film Fairey after Invader returns to France, and when Fairey asks what Guetta plans to do with the footage, Guetta says he is going to make a documentary about street art. He follows Fairey as Fairey travels the world executing the OBEY Giant campaign, and films numerous artists at work, among them Poster Boy, Seizer, Neck Face, Sweet Toof, Cyclops, Ron English, Dotmasters, Swoon, Azil, Borf, and Buff Monster. However, in reality, Guetta merely likes to film things and has no intention of making a film out of the footage, which he never watches, simply dumping the tapes into boxes.
+            
+            Guetta becomes obsessed with filming the mysterious Banksy, but can't arrange an introduction. Then, in the spring of 2006, Banksy's visit to LA is complicated when his usual accomplice is turned back at the border control, so he contacts Fairey, who recommends that Guetta would make a good guide. Things go well, and Banksy invites Guetta to England to film the production and deployment of his "Murdered Phone Booth" piece, including the crowd reaction. This confuses Banksy's crew, who are used to secrecy, but Banksy sees value in documenting street art, which he admits typically has a "short lifespan". After Guetta returns home, he begins to put up his own stickers and posters.
+            
+            When Banksy is back in LA preparing for his "Barely Legal" show, he takes Guetta to Disneyland to film the reaction after he deploys an inflatable doll dressed like a Guantanamo Bay detainee there. Guetta is caught and interrogated by security, but is able to stash the videotape in his sock and delete his still photographs, so he is released after four hours. Following this, Banksy admits he began to trust Guetta implicitly.
+            
+            "Barely Legal" is a huge success, and the price of street art begins to skyrocket in auction houses. Banksy is stunned by the sudden hype and urges Guetta to finish his documentary to show what the movement is really about. Over the next six months, Guetta turns his several thousand hours of footage into a film titled Life Remote Control: an unfocused 90 minutes of disorienting fast cutting. Banksy deems it "unwatchable", but feels that the street art footage itself is valuable, and decides to try and produce a film himself; to distract Guetta, he suggests him to go home, make some art, and put on a show.
+            
+            "I think the joke is on... I don’t know who the joke is on, really. I don’t even know if there is a joke."
+            
+            — Banksy's former spokesman Steve Lazarides
+            Adopting the name "Mr. Brainwash", Guetta mortgages his business and home to rent equipment, hires a production team to create art under his supervision, and rents the 15,000 square-foot former-CBS Studios complex for his first show, "Life Is Beautiful". As the show date approaches, Banksy becomes worried that things are going out of control and sends some professionals to help, who take care of the show's practical considerations, while Guetta focuses on publicity. He gets quotes from Fairey and Banksy, after which the LA Weekly does a cover story about the show, even though at that point he has yet to choose which of his team's works he wants to include. The press leads private art collectors to call Guetta about buying pieces before the opening, and he quotes prices of tens of thousands of dollars.
+            
+            On the day of the opening, the nearly 200 paintings finally arrive to be hung, but Guetta is busy giving interviews, so the crew decides where to put them. The doors open, and over 4,000 people saw the show that day. Almost a million dollars' worth of Guetta's art is sold the first week of the show, which is extended by two months, and his pieces are included in shows and galleries around the world. The success of Mr. Brainwash confuses Banksy and Fairey, who found Guetta derivative and unready for the world stage, but Guetta insists time would tell whether or not he is a real artist. The closing titles reveal Guetta went on to create the cover artwork for Madonna's hits collection Celebration.
+            
+            Production
+            About the film's arduous editing process, Banksy said: "I spent a year [...] watching footage of sweaty vandals falling off ladders",[3] and "The film was made by a very small team. It would have been even smaller if the editors didn't keep having mental breakdowns. They went through over 10,000 hours of Thierry's tapes and got literally seconds of usable footage out of it."[4] Producer Jaimie D'Cruz wrote in his production diary that obtaining the original tapes from Guetta was particularly complicated.
+            
+            Release and reception
+            Film industry veterans John Sloss and Bart Walker founded a new distribution company, Producers Distribution Agency (PDA), to release the film in the US,[5] and the company employed a unique grassroots promotional campaign. The film earned $3.29 million at the American box office,[6] and Oscilloscope Laboratories released it on DVD and Blu-ray in 2011.[7]
+            
+            The film received overwhelmingly positive reviews. On review aggregator website Rotten Tomatoes, it holds an approval rating of 96% based on 116 reviews, with an average rating of 8.10/10; the site's "critics consensus" reads: "An amusing, engrossing look at underground art, Exit Through the Gift Shop entertains as it deflates the myths and hype surrounding its subjects."[8] On Metacritic, the film has a weighted average score of 85 out of 100, based on 27 critics, indicating "universal acclaim".[9] French journalist Marjolaine Gout gave the film 4 out of 5 stars, while linking Mr. Brainwash to Jeff Koons and criticizing Thierry Guetta's work as "artistic toilet papering".[10]
+            
+            At the 83rd Academy Awards, the film was nominated for Best Documentary Feature.[11] The New York Film Critics Online bestowed its Best Documentary Award on the film in 2010.
+            
+            Hoax speculation
+            One consistent theme in reviews of the film was whether or not it was an elaborate ruse by Banksy. For example, Jeannette Catsoulis of The New York Times wrote that the film "could be a new subgenre: the prankumentary",[12] while Ty Burr of The Boston Globe, who found the film to be quite entertaining and awarded it four out of four stars, dismissed the notion of it being a "put on", writing: "I'm not buying it; for one thing, this story's too good, too weirdly rich, to be made up. For another, the movie's gently amused scorn lands on everyone."[13] Roger Ebert, who gave the film 3.5 out of 4 stars, wrote: "The widespread speculation that Exit Through the Gift Shop is a hoax only adds to its fascination", adding that he believed the film was real.[14]
+            
+            In an interview with SuicideGirls, producer Jaimie D'Cruz and editor Chris King denied the film was a hoax and expressed their growing frustration with speculation it was. King said: "For a while we all thought that was quite funny, but it went on for so long. It was a bit disappointing when it became basically accepted as fact, that it was all just a silly hoax I felt it was a shame that the whole thing was going to be dismissed like that really – because we knew it was true." Cruz said: "It pisses me off when you read in serious newspapers that the film is a mockumentary. That's not true."[15]
+            
+            For his part, Guetta said: "This movie is 100% real. Banksy captured me becoming an artist. In the end, I became his biggest work of art."[16]
+            
+            Copyright issues
+            Following the release of the film, Glen Friedman, an American photographer, sued Guetta over his use of a photograph of the rap group Run-DMC taken by Friedman.[17] Though Guetta claimed he had altered the original image enough for the result to be considered an original piece of art, the presiding judge, Judge Pregerson, ruled Friedman's photograph was protected under the transformative fair use law.[citation needed] Guetta also faced copyright claims from Joachim Levy, a Swiss filmmaker who edited and produced Guetta's film Life Remote Control,[18] clips of which were included in Exit Through the Gift Shop, as Levy was not credited for his work, but Guetta owned the footage, which was licensed to Banksy.[18]
+            
+            Banksy had coincidentally chosen the name of the existing band Exit Through the Gift Shop.[19] He gifted his work Brace Yourself (2010), valued then at £200,000, to the band in exchange for the rights to their name.[20] In 2023, the band sold the artwork on for over $2 million, with the art itself having been valued only at $600,000. Some of the proceeds went to the charity MusiCares, providing help to those in the music industry.[2]
+            
+            Archival footage
+            The film's opening montage includes archival footage from the following street art films: Dirty Hands: The Art and Crimes of David Choe, Infamy, Inside Outside, Next The Movie, Open Air, The Lyfe, Popaganda: The Art and Crimes of Ron English, Rash, Restless Debt of the Third World, Spending Time with Poster Boy, Turf War, Elis G The Life of a Shadow, Memoria Canalla, C215 in London, and Beautiful Losers.[21]
+            
+            See also
+            List of works by Banksy
+            References
+             Willmore, Alison (27 January 2010). "Exit Through The Gift Shop: It's a madhouse, this modern life"". IFC. Archived from the original on 31 January 2010.
+             "Frequently asked questions". banksy.co.uk. Archived from the original on 3 January 2012. Retrieved 27 March 2012.
+             Kylie Northover (29 May 2010). "Drawn from the shadows, wanted man comes out to play". The Sydney Morning Herald.
+             Leopold, Shelley (8 April 2010). "Banksy Revealed?". LA Weekly. Archived from the original on 13 August 2010.
+             ""Exit" Strategy: Bringing Banksy to the Masses". Indiewire. 7 April 2010.
+             "Exit Through the Gift Shop". Box Office Mojo.
+             "Oscilloscope to Release Banksy DVD". Variety. 21 October 2010. Archived from the original on 4 March 2016.
+             "Exit Through the Gift Shop (2010)". Rotten Tomatoes. Fandango Media. Retrieved 30 September 2022.
+             "Exit Through the Gift Shop Reviews". Metacritic. Retrieved 23 April 2018.
+             "Review of Exit Through the Gift Shop". Écran large (in French).
+             "Oscar nominations 2011: Complete list of Academy Award nominees". The Washington Post. 25 January 2011. Retrieved 25 January 2011.
+             Catsoulis, Jeannette (16 April 2010). "On the Street, at the Corner of Art and Trash". The New York Times. "Exit" could be a new subgenre: the prankumentary. Audiences, however, would be advised simply to enjoy the film on its face – even if that face is a carefully contrived mask.
+             Burr, Ty (23 April 2010). "Exit Through the Gift Shop: Writing's on the wall: In 'Exit,' street art scene becomes a farce". The Boston Globe.
+             Ebert, Roger (28 April 2010). "Is it a hoax if it's also art? (2010)". Chicago Sun-Times. Retrieved 25 November 2020.
+             "Jaimie D'Cruz and Chris King: Exit Through the Gift Shop". Suicide Girls. 14 December 2010. Archived from the original on 15 February 2011. Retrieved 24 February 2011.
+             Felch, Jason, "Getting at the truth of 'Exit Through the Gift Shop'", Los Angeles Times, 22 February 2011.
+             "Banksy documentary no hoax, Thierry Guetta lawsuit suggests". The Guardian. 8 June 2011.
+             Ryzik, Melena (5 January 2011). "New Doubts for a Film That Has Truth Issues". The New York Times.
+             "What's in a name? For Simon Duncan's band, a £200,000 Banksy". TheGuardian.com. 24 April 2010.
+             "Banksy kept under spare bed to go on display in Salford". BBC News. 5 October 2022.
+             Credits, 'Archival footage', Exit Through the Gift Shop.
+            Further reading
+            "Banksy film to debut at Sundance". BBC News. BBC. 21 January 2010. Retrieved 21 January 2010.
+            Knegt, Peter (21 January 2010). "Sundance Surprise: Banksy's "Gift Shop"". indieWire. Retrieved 21 January 2010.
+            "Sundance 2010: Banksy rocks festival with 'Gift Shop'". Los Angeles Times. 25 January 2010. Retrieved 25 January 2010.
+            "FILM REVIEW: Exit Through The Gift Shop". Culture Northern Ireland. 9 March 2010. Archived from the original on 11 January 2012. Retrieved 9 March 2010.
+            Jackson, Candace; Schuker, Lauren A. E., "Mr. Brainwash: For Real?", The Wall Street Journal, 12 February 2010.
+            Ryzik, Melena, "Riddle? Yes. Enigma? Sure. Documentary?", The New York Times, 13 April 2010.
+            Michael Hutak, Exit Through the Foyer. Review of Australian première at the 2010 Sydney Film Festival; critiques the film for posing as hoax.
+            External links
+            Official website
+            Exit Through the Gift Shop at IMDb Edit this at Wikidata
+            Exit Through the Gift Shop at Rotten Tomatoes
+            'Shenanigans Are What He Does': Is Banksy Gunning For An Oscar? – audio report by NPR
+            Exit Through the Gift Shop: Cavemen to the Right Film Review, Bright Lights Film Journal
+            Awards for Exit Through the Gift Shop
+            vte
+            Banksy
+            Categories: 2010 films2010 independent filmsWorks by BanksyBritish documentary filmsDocumentary films about graffitiDocumentary films about visual artistsSelf-reflexive films2010 directorial debut films2010s English-language films2010s British films
+            This page was last edited on 16 January 2024, at 09:18 (UTC).
+            Text is available under the Creative Commons Attribution-ShareAlike License 4.0; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+            Privacy policyAbout WikipediaDisclaimersContact WikipediaCode of ConductDevelopersStatisticsCookie statementMobile viewWikimedia FoundationPowered by MediaWiki
+            </div>
+</body>
+</html>
