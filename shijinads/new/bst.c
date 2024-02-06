@@ -6,6 +6,7 @@ struct node
     struct node *left;
     struct node *right;
 } *root, *temp;
+
 struct node *addNode()
 {
     struct node *new = (struct node *)malloc(sizeof(struct node));
